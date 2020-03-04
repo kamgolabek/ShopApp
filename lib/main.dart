@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './screens/products_overview_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,12 +10,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
+        accentColor: Colors.deepOrange,
+        // textTheme: GoogleFonts.shadowsIntoLightTextTheme(
+        //   Theme.of(context).textTheme,
+        // ),
+        // primaryTextTheme: GoogleFonts.shadowsIntoLightTextTheme(
+        //   Theme.of(context).textTheme,
+        // )
+        fontFamily: 'Lato',
       ),
       home: ProductsOverviewScreen(),
     );
   }
 }
-
-
-
